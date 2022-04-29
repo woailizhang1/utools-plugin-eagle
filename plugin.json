@@ -1,0 +1,11 @@
+{
+  "logo": "assets/logo.png",
+  "preload": "preload.js",
+  "features": [
+    {
+      "code": "Eagle",
+      "explain": "搜索Eagle内容",
+      "cmds": ["Eagle", "eagle"]
+    }
+  ]
+}
