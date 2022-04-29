@@ -68,7 +68,7 @@ window.exports = {
             window.utools.outPlugin()
          },
          // 子输入框为空时的占位符，默认为字符串"搜索"
-         placeholder: "搜索"
+         placeholder: "搜索Eagleb内容"
       }
    }
 }
