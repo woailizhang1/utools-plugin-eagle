@@ -1,6 +1,6 @@
 {
   "logo": "assets/logo.png",
-  "preload": "preload.js",
+  "main": "doc/index.html",
   "features": [
     {
       "code": "Eagle",

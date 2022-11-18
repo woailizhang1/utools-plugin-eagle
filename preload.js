@@ -28,6 +28,7 @@ const searchItemList = async (keyword) => {
             url,
             ext,
             fullPath: '',
+             p:'doc/index.html'
          }
       })
    }).catch(() => {
@@ -46,21 +47,23 @@ const searchItemList = async (keyword) => {
    return list
 }
 
+
+
+
+
 window.exports = {
    "Eagle": { // 注意：键对应的是 plugin.json 中的 features.code
-      mode: "list",  // 列表模式
+      mode: "doc",
       args: {
-         // 进入插件时调用（可选）
-         enter: (action, callbackSetList) => {
-            // 如果进入插件就要显示列表数据
-            callbackSetList(cacheList)
-         },
+
          // 子输入框内容变化时被调用 可选 (未设置则无搜索)
          search: async (action, searchWord, callbackSetList) => {
+             console.log(1132);
             const list = await searchItemList(searchWord);
             cacheList = list;
             callbackSetList(list)
          },
+          indexes: cacheList,
          // 用户选择列表中某个条目时被调用
          select: (action, itemData, callbackSetList) => {
             window.utools.hideMainWindow()

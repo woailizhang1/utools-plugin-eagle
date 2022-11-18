@@ -2,12 +2,12 @@
   "name": "utools-plugin-eagle",
   "version": "1.0.0",
   "description": "",
-  "main": "preload.js",
+ 
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
-  "author": "kaiser <3033244122@qq.com> (http://github.com/woalizhang1)",
+  "author": "AKe <3033244122@qq.com> (http://github.com/woalizhang1)",
   "license": "ISC",
   "dependencies": {
     "axios": "^0.27.2"
